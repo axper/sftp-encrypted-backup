@@ -5,25 +5,17 @@
 
     Run this script with "-h" argument to see the list of arguments.
 
-    Example 1:
+    Example:
 
         ./thisscript.py \
-        --7zip-command '7z' \
+        --7zip-command 7z \
+        --archive-password Sekrit \
         --hostname 192.168.56.8 \
         --username test \
         --server-password test \
-        --archive-password=Sekrit \
-        /usr/sare/licenses \
-        /media/storage/backup/qbittorrent
-
-    Example 2:
-
-        ./thisscript.py \
-        --7zip-command=7z \
-        --hostname=192.168.56.8 \
-        --username=test \
-        --server-password=test \
-        /usr/share/licenses
+        /usr/share/licenses \
+        /etc/resolv.conf \
+        /etc/vimrc
 '''
 
 import subprocess
