@@ -36,7 +36,9 @@ def compress_directory(directory_to_compress,
         Returns: full path to the resulting archive.
     '''
 
-    archive_filename = os.path.basename(directory_to_compress) + \
+    directory_name = os.path.basename(os.path.abspath(directory_to_compress))
+
+    archive_filename = directory_name + \
                        '_' + \
                        time.strftime('%Y.%m.%d_%H.%M.%S') + \
                        '.7z'
