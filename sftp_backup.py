@@ -7,7 +7,7 @@
 
     Example:
 
-        ./thisscript.py \
+        ./sftp_backup.py \
         --7zip-command 7z \
         --archive-password Sekrit \
         --hostname 192.168.56.8 \
