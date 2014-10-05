@@ -187,6 +187,8 @@ def main():
 
         upload_file(sftp_connection, path_to_archive, args.remote_path)
 
+        os.remove(path_to_archive)
+
     sftp_connection.close()
 
 
